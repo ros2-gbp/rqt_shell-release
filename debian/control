@@ -1,0 +1,12 @@
+Source: ros-dashing-rqt-shell
+Section: misc
+Priority: extra
+Maintainer: Dorian Scholz <scholz@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-dashing-ament-cmake, ros-dashing-ros-workspace
+Homepage: http://wiki.ros.org/rqt_shell
+Standards-Version: 3.9.2
+
+Package: ros-dashing-rqt-shell
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-catkin-pkg-modules, ros-dashing-python-qt-binding (>= 0.2.19), ros-dashing-qt-gui, ros-dashing-qt-gui-py-common, ros-dashing-rqt-gui, ros-dashing-rqt-gui-py, ros-dashing-ros-workspace
+Description: rqt_shell is a Python GUI plugin providing an interactive shell.
