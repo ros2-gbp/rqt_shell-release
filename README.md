@@ -1,3 +1,26 @@
+## rqt_shell (eloquent) - 1.0.0-1
+
+The packages in the `rqt_shell` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --rosdistro eloquent rqt_shell` on `Thu, 03 Oct 2019 21:22:20 -0000`
+
+The `rqt_shell` package was released.
+
+Version of package(s) in repository `rqt_shell`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_shell.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.16.1`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## rqt_shell (dashing) - 1.0.0-1
 
 The packages in the `rqt_shell` repository were released into the `dashing` distro by running `/usr/bin/bloom-release -r dashing -t dashing rqt_shell` on `Thu, 09 May 2019 23:24:44 -0000`
