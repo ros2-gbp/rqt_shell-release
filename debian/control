@@ -1,0 +1,12 @@
+Source: ros-eloquent-rqt-shell
+Section: misc
+Priority: extra
+Maintainer: Dorian Scholz <scholz@sim.tu-darmstadt.de>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake, ros-eloquent-ros-workspace
+Homepage: http://wiki.ros.org/rqt_shell
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-rqt-shell
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-catkin-pkg-modules, ros-eloquent-python-qt-binding (>= 0.2.19), ros-eloquent-qt-gui, ros-eloquent-qt-gui-py-common, ros-eloquent-rqt-gui, ros-eloquent-rqt-gui-py, ros-eloquent-ros-workspace
+Description: rqt_shell is a Python GUI plugin providing an interactive shell.
