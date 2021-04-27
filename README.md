@@ -1,3 +1,26 @@
+## rqt_shell (foxy) - 1.0.1-1
+
+The packages in the `rqt_shell` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --track foxy --rosdistro foxy rqt_shell` on `Tue, 27 Apr 2021 14:36:13 -0000`
+
+The `rqt_shell` package was released.
+
+Version of package(s) in repository `rqt_shell`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_shell.git
+- release repository: https://github.com/ros2-gbp/rqt_shell-release.git
+- rosdistro version: `1.0.0-1`
+- old version: `1.0.0-1`
+- new version: `1.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.1`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## rqt_shell (galactic) - 1.0.1-1
 
 The packages in the `rqt_shell` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --track galactic --rosdistro galactic rqt_shell` on `Tue, 27 Apr 2021 14:34:35 -0000`
