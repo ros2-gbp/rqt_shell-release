@@ -1,6 +1,6 @@
 <package format="2">
   <name>rqt_shell</name>
-  <version>1.0.2</version>
+  <version>1.1.0</version>
   <description>rqt_shell is a Python GUI plugin providing an interactive shell.</description>
   <maintainer email="scholz@sim.tu-darmstadt.de">Dorian Scholz</maintainer>
   <maintainer email="kunal_tyagi@yahoo.com">Kunal Tyagi</maintainer>
