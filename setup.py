@@ -4,7 +4,7 @@ package_name = 'rqt_shell'
 
 setup(
     name=package_name,
-    version='1.1.0',
+    version='1.1.1',
     packages=[package_name],
     package_dir={'': 'src'},
     data_files=[
@@ -18,8 +18,8 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     author='Dorian Scholz',
-    maintainer='Dirk Thomas, Dorian Scholz, Kunal Tyagi',
-    maintainer_email='dthomas@osrfoundation.org',
+    maintainer='Michael Jeronimo',
+    maintainer_email='michael.jeronimo@openrobotics.org',
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
