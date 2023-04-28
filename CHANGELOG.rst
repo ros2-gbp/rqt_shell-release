@@ -2,6 +2,9 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (2023-04-28)
+------------------
+
 1.1.1 (2023-02-14)
 ------------------
 * [rolling] Update maintainers - 2022-11-07 (`#17 <https://github.com/ros-visualization/rqt_shell/issues/17>`_)
