@@ -4,7 +4,7 @@ package_name = 'rqt_shell'
 
 setup(
     name=package_name,
-    version='1.2.0',
+    version='1.2.1',
     packages=[package_name],
     package_dir={'': 'src'},
     data_files=[
@@ -31,6 +31,7 @@ setup(
         'rqt_shell is a Python GUI plugin providing an interactive shell.'
     ),
     license='BSD',
+    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'rqt_shell = ' + package_name + '.main:main',
