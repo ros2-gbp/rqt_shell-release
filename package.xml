@@ -1,6 +1,6 @@
 <package format="2">
   <name>rqt_shell</name>
-  <version>1.2.0</version>
+  <version>1.2.1</version>
   <description>rqt_shell is a Python GUI plugin providing an interactive shell.</description>
 
   <maintainer email="michael.jeronimo@openrobotics.org">Michael Jeronimo</maintainer>
@@ -20,6 +20,8 @@
   <exec_depend>qt_gui_py_common</exec_depend>
   <exec_depend>rqt_gui</exec_depend>
   <exec_depend>rqt_gui_py</exec_depend>
+
+  <test_depend>python3-pytest</test_depend>
 
   <export>
     <qt_gui plugin="${prefix}/plugin.xml"/>
