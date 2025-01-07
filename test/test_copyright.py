@@ -1,4 +1,4 @@
-# Copyright (c) 2012, Dorian Scholz
+# Copyright (c) 2024, Open Source Robotics Foundation, Inc.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -11,7 +11,7 @@
 #     copyright notice, this list of conditions and the following
 #     disclaimer in the documentation and/or other materials provided
 #     with the distribution.
-#   * Neither the name of the Willow Garage, Inc. nor the names of its
+#   * Neither the name of the copyright holder nor the names of its
 #     contributors may be used to endorse or promote products derived
 #     from this software without specific prior written permission.
 #
@@ -28,21 +28,11 @@
 # ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-import os
-
-from python_qt_binding import loadUi
-from python_qt_binding.QtWidgets import QWidget
-from qt_gui.ros_package_helper import get_package_path
-from rqt_shell.shell_text_edit import ShellTextEdit
+from ament_copyright.main import main
+import pytest
 
 
-class ShellWidget(QWidget):
-
-    def __init__(self, parent=None, script_path=None):
-        super(ShellWidget, self).__init__(parent=parent)
-        package_path = get_package_path('rqt_shell')
-        ui_file = os.path.join(package_path, 'share', 'rqt_shell', 'resource', 'shell_widget.ui')
-        if not os.path.exists(ui_file):
-            raise Exception('ShellWidget UI File was not found at {}'.format(ui_file))
-        loadUi(ui_file, self, {'ShellTextEdit': ShellTextEdit})
-        self.setObjectName('ShellWidget')
+@pytest.mark.copyright
+@pytest.mark.linter
+def test_copyright():
+    assert main() == 0, 'Found errors'
