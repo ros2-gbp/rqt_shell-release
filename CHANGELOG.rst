@@ -2,6 +2,13 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.1 (2025-01-07)
+------------------
+* Add in standard tests to rqt_shell. (`#24 <https://github.com/ros-visualization/rqt_shell/issues/24>`_)
+  That way we know it conforms to our standards.
+* Remove CODEOWNERS (`#22 <https://github.com/ros-visualization/rqt_shell/issues/22>`_)
+* Contributors: Alejandro Hernández Cordero, Chris Lalancette
+
 1.3.0 (2024-04-26)
 ------------------
 
