@@ -2,6 +2,9 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.0 (2025-04-28)
+------------------
+
 1.3.1 (2025-01-07)
 ------------------
 * Add in standard tests to rqt_shell. (`#24 <https://github.com/ros-visualization/rqt_shell/issues/24>`_)
