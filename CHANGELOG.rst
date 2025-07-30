@@ -2,6 +2,12 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.4.1 (2025-07-30)
+------------------
+* make linters happy
+* Fix setuptools deprecation (`#26 <https://github.com/ros-visualization/rqt_shell/issues/26>`_)
+* Contributors: Alejandro Hernandez Cordero, mosfet80
+
 1.4.0 (2025-04-28)
 ------------------
 
