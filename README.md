@@ -1,3 +1,26 @@
+## rqt_shell (jazzy) - 1.2.3-1
+
+The packages in the `rqt_shell` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --track jazzy --rosdistro jazzy rqt_shell` on `Wed, 21 Jan 2026 22:37:19 -0000`
+
+The `rqt_shell` package was released.
+
+Version of package(s) in repository `rqt_shell`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_shell.git
+- release repository: https://github.com/ros2-gbp/rqt_shell-release.git
+- rosdistro version: `1.2.2-2`
+- old version: `1.2.2-2`
+- new version: `1.2.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## rqt_shell (rolling) - 1.4.1-1
 
 The packages in the `rqt_shell` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling rqt_shell` on `Wed, 30 Jul 2025 11:52:42 -0000`
