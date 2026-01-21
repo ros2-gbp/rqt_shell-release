@@ -4,7 +4,7 @@ package_name = 'rqt_shell'
 
 setup(
     name=package_name,
-    version='1.2.2',
+    version='1.2.3',
     packages=[package_name],
     package_dir={'': 'src'},
     data_files=[
@@ -23,7 +23,6 @@ setup(
     keywords=['ROS'],
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
         'Topic :: Software Development',
     ],
@@ -31,7 +30,11 @@ setup(
         'rqt_shell is a Python GUI plugin providing an interactive shell.'
     ),
     license='BSD',
-    tests_require=['pytest'],
+    extras_require={
+        'test' : [
+            'pytest',
+        ],
+    },
     entry_points={
         'console_scripts': [
             'rqt_shell = ' + package_name + '.main:main',
