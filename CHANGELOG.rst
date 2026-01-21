@@ -2,24 +2,17 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.4.1 (2025-07-30)
+1.2.3 (2026-01-21)
 ------------------
-* make linters happy
-* Fix setuptools deprecation (`#26 <https://github.com/ros-visualization/rqt_shell/issues/26>`_)
-* Contributors: Alejandro Hernandez Cordero, mosfet80
-
-1.4.0 (2025-04-28)
-------------------
-
-1.3.1 (2025-01-07)
-------------------
-* Add in standard tests to rqt_shell. (`#24 <https://github.com/ros-visualization/rqt_shell/issues/24>`_)
-  That way we know it conforms to our standards.
-* Remove CODEOWNERS (`#22 <https://github.com/ros-visualization/rqt_shell/issues/22>`_)
-* Contributors: Alejandro Hernández Cordero, Chris Lalancette
-
-1.3.0 (2024-04-26)
-------------------
+* Fix setuptools deprecation (backport `#26 <https://github.com/ros-visualization/rqt_shell/issues/26>`_) (`#28 <https://github.com/ros-visualization/rqt_shell/issues/28>`_)
+  Fix setuptools deprecation (`#26 <https://github.com/ros-visualization/rqt_shell/issues/26>`_)
+  (cherry picked from commit 23528082dc9fff90587fbfd28ef71737ad97f035)
+  Co-authored-by: mosfet80 <10235105+mosfet80@users.noreply.github.com>
+* Remove CODEOWNERS (backport `#22 <https://github.com/ros-visualization/rqt_shell/issues/22>`_) (`#23 <https://github.com/ros-visualization/rqt_shell/issues/23>`_)
+  Remove CODEOWNERS (`#22 <https://github.com/ros-visualization/rqt_shell/issues/22>`_)
+  (cherry picked from commit 9c9550f5a51b2fac713006fa034f2e57cf362c9b)
+  Co-authored-by: Alejandro Hernández Cordero <ahcorde@gmail.com>
+* Contributors: mergify[bot]
 
 1.2.2 (2024-04-16)
 ------------------

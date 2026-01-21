@@ -1,6 +1,6 @@
 <package format="2">
   <name>rqt_shell</name>
-  <version>1.4.1</version>
+  <version>1.2.3</version>
   <description>rqt_shell is a Python GUI plugin providing an interactive shell.</description>
 
   <maintainer email="clalancette@gmail.com">Chris Lalancette</maintainer>
@@ -15,15 +15,12 @@
   <author email="kunal_tyagi@yahoo.com">Kunal Tyagi</author>
 
   <exec_depend version_gte="0.2.19">python_qt_binding</exec_depend>
+  <exec_depend>python3-catkin-pkg-modules</exec_depend>
   <exec_depend>qt_gui</exec_depend>
   <exec_depend>qt_gui_py_common</exec_depend>
   <exec_depend>rqt_gui</exec_depend>
   <exec_depend>rqt_gui_py</exec_depend>
 
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>ament_xmllint</test_depend>
   <test_depend>python3-pytest</test_depend>
 
   <export>
