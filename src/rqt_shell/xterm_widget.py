@@ -30,8 +30,9 @@
 
 import os
 
-from python_qt_binding.QtCore import QProcess, QTimer, Signal
+from python_qt_binding.QtCore import QProcess, QTimer, qWarning, Signal
 from python_qt_binding.QtGui import QX11EmbedContainer
+from python_qt_binding.QtWidgets import QApplication
 
 
 class XTermWidget(QX11EmbedContainer):
@@ -41,8 +42,9 @@ class XTermWidget(QX11EmbedContainer):
     def __init__(self, parent=None, script_path=None):
         # possible use os to do better justice to script path??
         if script_path:
-            self.xterm_cmd += " -e $SHELL -c 'source %s; $SHELL'" % os.path.abspath(script_path)
-        super(XTermWidget, self).__init__(parent)
+            self.xterm_cmd += \
+                f" -e $SHELL -c 'source {os.path.abspath(script_path)}; $SHELL'"
+        super().__init__(parent)
         self.setObjectName('XTermWidget')
         self._process = QProcess(self)
         self._process.finished.connect(self.close_signal)
@@ -52,8 +54,8 @@ class XTermWidget(QX11EmbedContainer):
     def _embed_xterm(self):
         args = ['-into', str(self.winId())]
         self._process.start(self.xterm_cmd, args)
-        if self._process.error() == QProcess.FailedToStart:
-            print("failed to execute '%s'" % self.xterm_cmd)
+        if self._process.error() == QProcess.ProcessError.FailedToStart:
+            qWarning(f"failed to execute '{self.xterm_cmd}'")
 
     def shutdown(self):
         self._process.kill()
@@ -65,7 +67,6 @@ def is_xterm_available():
 
 
 if __name__ == '__main__':
-    from PyQt4.QtGui import QApplication
     app = QApplication([])
     xt = XTermWidget()
-    app.exec_()
+    app.exec()

@@ -38,11 +38,8 @@ from spyderlib.widgets.shell import TerminalWidget
 
 
 def is_string(s):
-    """Check if the argument is a string which works for both Python 2 and 3."""
-    try:
-        return isinstance(s, basestring)
-    except NameError:
-        return isinstance(s, str)
+    """Check if the argument is a string."""
+    return isinstance(s, str)
 
 
 class SpyderShellWidget(ExternalShellBase):
@@ -79,15 +76,11 @@ class SpyderShellWidget(ExternalShellBase):
         self.shell.clear()
 
         self.process = QProcess(self)
-        self.process.setProcessChannelMode(QProcess.MergedChannels)
+        self.process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels)
 
         env = []
         for key_val_pair in self.process.systemEnvironment():
-            try:
-                value = unicode(key_val_pair)
-            except NameError:
-                value = str(key_val_pair)
-            env.append(value)
+            env.append(str(key_val_pair))
         env.append('TERM=xterm')
         env.append('COLORTERM=gnome-terminal')
         self.process.setEnvironment(env)
@@ -128,10 +121,7 @@ class SpyderShellWidget(ExternalShellBase):
 
     def send_to_process(self, text):
         if not is_string(text):
-            try:
-                text = unicode(text)
-            except NameError:
-                text = str(text)
+            text = str(text)
         if not text.endswith('\n'):
             text += '\n'
         self.process.write(QTextCodec.codecForLocale().fromUnicode(text))
