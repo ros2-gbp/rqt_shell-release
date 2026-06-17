@@ -1,3 +1,26 @@
+## rqt_shell (lyrical) - 1.4.2-1
+
+The packages in the `rqt_shell` repository were released into the `lyrical` distro by running `/usr/bin/bloom-release --rosdistro lyrical --track lyrical rqt_shell` on `Wed, 17 Jun 2026 10:20:43 -0000`
+
+The `rqt_shell` package was released.
+
+Version of package(s) in repository `rqt_shell`:
+
+- upstream repository: https://github.com/ros-visualization/rqt_shell.git
+- release repository: https://github.com/ros2-gbp/rqt_shell-release.git
+- rosdistro version: `1.4.1-3`
+- old version: `1.4.1-3`
+- new version: `1.4.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## rqt_shell (rolling) - 2.0.1-1
 
 The packages in the `rqt_shell` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling rqt_shell` on `Wed, 17 Jun 2026 10:08:27 -0000`
