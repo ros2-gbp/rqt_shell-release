@@ -39,10 +39,10 @@ from rqt_shell.shell_text_edit import ShellTextEdit
 class ShellWidget(QWidget):
 
     def __init__(self, parent=None, script_path=None):
-        super(ShellWidget, self).__init__(parent=parent)
+        super().__init__(parent=parent)
         package_path = get_package_path('rqt_shell')
         ui_file = os.path.join(package_path, 'share', 'rqt_shell', 'resource', 'shell_widget.ui')
         if not os.path.exists(ui_file):
-            raise Exception('ShellWidget UI File was not found at {}'.format(ui_file))
+            raise Exception(f'ShellWidget UI File was not found at {ui_file}')
         loadUi(ui_file, self, {'ShellTextEdit': ShellTextEdit})
         self.setObjectName('ShellWidget')
