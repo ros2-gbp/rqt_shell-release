@@ -39,7 +39,7 @@ from rqt_shell.shell_widget import ShellWidget
 try:
     if qVersion().startswith('5.'):
         raise ImportError('embedding is not support with Qt 5')
-    from xterm_widget import XTermWidget, is_xterm_available
+    from rqt_shell.xterm_widget import XTermWidget, is_xterm_available
     _has_xterm = is_xterm_available()
 except ImportError:
     XTermWidget = None
@@ -47,7 +47,7 @@ except ImportError:
 try:
     if qVersion().startswith('5.'):
         raise ImportError('spyderlib does not support Qt 5 yet')
-    from spyder_shell_widget import SpyderShellWidget
+    from rqt_shell.spyder_shell_widget import SpyderShellWidget
     _has_spyderlib = True
 except ImportError:
     SpyderShellWidget = None
@@ -81,7 +81,7 @@ class Shell(Plugin):
     ]
 
     def __init__(self, context):
-        super(Shell, self).__init__(context)
+        super().__init__(context)
         self._context = context
         self.setObjectName('Shell')
         self._args = self._parse_args(context.argv())
@@ -116,8 +116,8 @@ class Shell(Plugin):
         self._widget = selected_shell['widget_class'](script_path=self._args.init_script)
         self._widget.setWindowTitle(selected_shell['title'])
         if self._context.serial_number() > 1:
-            self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' %
-                                        self._context.serial_number()))
+            self._widget.setWindowTitle(
+                self._widget.windowTitle() + (f' ({self._context.serial_number()})'))
         self._context.add_widget(self._widget)
         if hasattr(self._widget, 'close_signal'):
             self._widget.close_signal.connect(self._context.close_plugin)
