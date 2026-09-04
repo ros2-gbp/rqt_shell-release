@@ -2,6 +2,11 @@
 Changelog for package rqt_shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.2 (2026-09-04)
+------------------
+* Removed Qt5 support (`#34 <https://github.com/ros-visualization/rqt_shell/issues/34>`_)
+* Contributors: Alejandro Hernández Cordero
+
 2.0.1 (2026-06-17)
 ------------------
 * Use logger.warning(), f-string and super() (`#31 <https://github.com/ros-visualization/rqt_shell//issues/31>`_)
