@@ -30,23 +30,18 @@
 
 import argparse
 
-from python_qt_binding.QtCore import qVersion
 from qt_gui.plugin import Plugin
 from qt_gui_py_common.simple_settings_dialog import SimpleSettingsDialog
 
 from rqt_shell.shell_widget import ShellWidget
 
 try:
-    if qVersion().startswith('5.'):
-        raise ImportError('embedding is not support with Qt 5')
     from rqt_shell.xterm_widget import XTermWidget, is_xterm_available
     _has_xterm = is_xterm_available()
 except ImportError:
     XTermWidget = None
     _has_xterm = False
 try:
-    if qVersion().startswith('5.'):
-        raise ImportError('spyderlib does not support Qt 5 yet')
     from rqt_shell.spyder_shell_widget import SpyderShellWidget
     _has_spyderlib = True
 except ImportError:
